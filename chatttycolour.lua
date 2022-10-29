@@ -27,4 +27,8 @@ return {
    TagText = "Azura Client Co Owner",
    TagColor = Color3.fromRGB(188, 12, 232)
   },
+          ["IIIlllIlIIlllIlIlIIl"] = {
+   TagText = "TotallyNotHam135",
+   TagColor = Color3.fromRGB(255,65,65)
+  },
 }
