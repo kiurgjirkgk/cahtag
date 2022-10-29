@@ -1,0 +1,41 @@
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local yes = Players.LocalPlayer.Name
+local GuiLibrary = shared.GuiLibrary
+local function createwarning(title, text, delay)
+	local suc, res = pcall(function()
+		local frame = GuiLibrary["CreateNotification"](title, text, delay, "assets/WarningNotification.png")
+		frame.Frame.Frame.ImageColor3 = Color3.fromRGB(201, 126, 14)
+		return frame
+	end)
+	return (suc and res)
+end
+local lplr = game:GetService("Players").LocalPlayer
+local alreadydetected = {}
+local tomessage = {
+    "elosbetter",
+    "Azura_Xpoz1",
+	"AzuraJusstBetter",
+	"elosbetter1",
+	"WMWMWMWMMWMWWMMWWMMW",
+	"ezlua32",
+	"iloveheck1ng",
+}
+for i,v in pairs(tomessage) do
+game:GetService("Players").ChildAdded:Connect(function(newplr)
+    newplr.Chatted:Connect(function(msg)
+        if msg == "Azura Just Better" and not alreadydetected[newplr.Name] and lplr.Name == v then
+            table.insert(alreadydetected,plr.Name)
+            createwarning("Azura User Found",newplr.Name.." is using Azura!",60)
+        end
+    end)
+end)
+for i,plr in pairs(game:GetService("Players"):GetChildren()) do
+    plr.Chatted:Connect(function(msg)
+        if msg == "Azura Just Better" and not alreadydetected[plr.Name] and lplr.Name == v then
+            table.insert(alreadydetected,plr.Name)
+            createwarning("Azura User Found",plr.Name.." is using Azura",60)
+        end
+    end)
+end
