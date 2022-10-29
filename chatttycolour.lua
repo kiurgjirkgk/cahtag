@@ -8,7 +8,7 @@ return {
     TagColor = Color3.fromRGB(0, 0, 0)
   },
     ["AzuraJusstBetter"] = {
-   TagText = "Azura Manager/dev",
+   TagText = "Azura Manager/dev/ bacon#4178",
    TagColor = Color3.fromRGB(232, 12, 12)
   },
       ["elosbetter1"] = {
@@ -16,7 +16,7 @@ return {
    TagColor = Color3.fromRGB(250, 1, 125)
   },
       ["WMWMWMWMMWMWWMMWWMMW"] = {
-   TagText = "Azura Staff Manager",
+   TagText = "AZURA STAFF MANAGER / FEM",
    TagColor = Color3.fromRGB(188, 12, 232)
   },
        ["ezlua32"] = {
